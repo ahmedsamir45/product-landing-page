@@ -1,0 +1,160 @@
+ul{
+    list-style: none;
+}
+
+video{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+    width: 100%;
+}
+.logo{
+    height: 80px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+a{
+    color: rgb(102, 47, 47);
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px ;
+    flex-direction:row;
+}
+h2{
+    display: block;
+    color: blueviolet;
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+
+    
+    
+}
+.products .product{
+    border: red 1px solid;
+   padding: 20px;
+   background-color: rgb(186, 203, 218);
+   border-radius: 30px;
+
+}
+.products .product span{
+    display: block;
+    margin: 20px auto;
+    color: white;
+    background-color: green;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+}
+.products .product h3{
+    color: rgb(57, 49, 49);
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+}
+.products .product img{
+    height: 250px;
+}
+
+body > div{
+    margin-bottom:100px ;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.srv{
+    border: red 1px solid;
+    width: 400px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+input[type="text"],input[type="email"]{
+    display: block;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(216, 202, 202);
+    outline: none;
+    border: none;
+    min-width: 250px;
+
+}
+#submit{
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: aqua;
+    
+    padding: 20px;
+    background-color: rgb(216, 202, 202);
+    outline: none;
+    border: none;
+
+}
+
+@media (max-width:720px) {
+    .products,.services{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .srv{
+        width: 250px;
+    }
+    input[type="text"],input[type="email"]{
+        width: fit-content;
+    }
+    #nav-bar{
+        width:fit-content;
+    }
+}
+footer{
+    width: 100%;
+
+    background-color: rgb(71, 156, 202);
+
+    padding:20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+}
+
+footer span{
+    display: flex;
+    gap: 10px;
+}
+
+.srv i{
+    color: tomato;
+}
+
