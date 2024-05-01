@@ -1,15 +1,40 @@
+/* start global  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    transition: 2s;
+}
+.container{
+    margin-top:100px;
+    padding: 0 20px;
+}
+video{
+    display: none;
+}
 ul{
     list-style: none;
 }
 
-video{
-    display: none;
-}
+
 a{
     text-decoration: none;
+    color: rgb(102, 47, 47);
+    transition: 1s;
+}
+a:hover{
+    color: rgb(240, 164, 72);
 }
 
+.container > div{
+    margin-bottom:75px ;
+}
+/* end global */
 
+/* start navbar  */
 #nav-bar{
     position: fixed;
     top: 0;
@@ -29,9 +54,8 @@ ul{
     gap: 20px;
     padding: 10px;
 }
-a{
-    color: rgb(102, 47, 47);
-}
+/* end navbar  */
+
 .products{
     display: flex;
     flex-wrap: wrap;
@@ -41,15 +65,18 @@ a{
     margin-top:20px ;
     flex-direction:row;
 }
-h2{
+.heading{
     display: block;
     color: blueviolet;
     padding: 20px;
     margin: 20px auto;
     width: fit-content;
-
-    
-    
+    border-bottom: brown 2px solid;
+    transition: 100ms;
+}
+.heading:hover{
+    border: brown 2px solid ;
+    background-color: wheat;
 }
 .products .product{
     border: red 1px solid;
@@ -77,10 +104,9 @@ h2{
     height: 250px;
 }
 
-body > div{
-    margin-bottom:100px ;
-}
 
+
+/* strat services */
 .services{
     display: flex;
     flex-wrap: wrap;
@@ -92,31 +118,67 @@ body > div{
     padding: 20px;
     border-radius: 30px;
 }
+.srv i{
+    color: tomato;
+}
+/* end services */
 
+/* start contact */
 input[type="text"],input[type="email"]{
     display: block;
     width: 100%;
-    margin: 20px;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
     background-color: rgb(216, 202, 202);
     outline: none;
     border: none;
-    min-width: 250px;
-
 }
+
 #submit{
     display: block;
     width: fit-content;
     margin: 20px auto;
-    background-color: aqua;
-    
+    transition:200ms;
     padding: 20px;
     background-color: rgb(216, 202, 202);
     outline: none;
     border: none;
+}
+#submit:hover{
+    background-color: rgb(9, 129, 129);
+    color: wheat;
+}
+/* end contact */
 
+
+/* start footer  */
+footer{
+    width: 100%;
+    background-color: rgb(71, 156, 202);
+    padding: 10px;
 }
 
+i{
+    font-size: 30px;
+    color:white;
+    transition: 1s;
+    margin: 4px;
+}
+footer div{
+    margin: 5px auto;
+    width: fit-content;
+}
+footer i:hover {
+    color: rgb(240, 164, 72);
+}
+footer span{
+    display:block;
+    width: fit-content;
+    margin: 4px auto;
+}
+/* end footer  */
+
+/* start media query for all */
 @media (max-width:720px) {
     .products,.services{
         display: flex;
@@ -127,34 +189,8 @@ input[type="text"],input[type="email"]{
     .srv{
         width: 250px;
     }
-    input[type="text"],input[type="email"]{
-        width: fit-content;
-    }
-    #nav-bar{
-        width:fit-content;
+    header li{
+        font-size: small;
     }
 }
-footer{
-    width: 100%;
-
-    background-color: rgb(71, 156, 202);
-
-    padding:20px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-    margin-left: 0;
-}
-
-footer span{
-    display: flex;
-    gap: 10px;
-}
-
-.srv i{
-    color: tomato;
-}
-
+/* end media query for all */
